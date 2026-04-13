@@ -1,0 +1,18 @@
+{
+    "name": "My Dev Environment",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "MS-CEINTL.vscode-language-pack-zh-hans",
+                "anthropic.claude-code",
+                "eamodio.gitlens"
+            ],
+            "settings": {
+                "editor.fontSize": 16
+            }
+        }
+    },
+    "postCreateCommand": "echo 'Codespace 创建完成！'",
+    "forwardPorts": [3000, 8080]
+}
